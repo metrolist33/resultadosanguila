@@ -1,646 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
 <meta name="google-site-verification" content="bkQxTC7HlI-j-8o_hCl3Y2mhMRHzoO8NSciPRrycaqQ" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados Anguila: Guía Completa de Resultados e Historial</title>
+<meta name="description" content="Consulta los resultados de Anguila, revisa sorteos anteriores, comprende los horarios y aprende a verificar la información disponible.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://resultadosanguila.com/">
+<meta name="theme-color" content="#062f34">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Resultados Anguila: Guía Completa de Resultados e Historial">
+<meta property="og:description" content="Una guía para consultar resultados de Anguila, revisar el historial y comprender la importancia de verificar la información.">
+<meta property="og:url" content="https://resultadosanguila.com/">
 <style>
-/* RESULTADOS ANGUILA — SCOPED DESIGN */
-.ra-page {
-  --ra-bg: #062f34;
-  --ra-deep: #03252b;
-  --ra-panel: #0b3c40;
-  --ra-gold: #ffc52e;
-  --ra-cream: #fff4df;
-  --ra-muted: #b9d3d2;
-  --ra-border: rgba(173, 222, 215, .17);
-  background: var(--ra-bg);
-  color: var(--ra-cream);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 12px;
-}
-.ra-page * { box-sizing: border-box; }
-.ra-page a { color: var(--ra-gold); }
-.ra-page a:hover { color: #fff0b1; }
-.ra-container { width: min(1120px, 92%); margin: auto; }
-
-/* HEADER */
-.ra-header {
-  background: var(--ra-deep);
-  border-bottom: 1px solid var(--ra-border);
-}
-.ra-nav {
-  min-height: 76px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 22px;
-  flex-wrap: wrap;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.ra-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  color: #fff !important;
-  text-decoration: none;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: -.6px;
-  line-height: 1.3;
-}
-.ra-brand span { color: var(--ra-gold); }
-.ra-logo {
-  display: flex;
-  align-items: center;
-  padding-left: 2px;
-}
-.ra-logo i {
-  display: block;
-  width: 21px;
-  height: 21px;
-  margin-left: -5px;
-  border: 2px solid var(--ra-deep);
-  border-radius: 50%;
-  background: var(--ra-gold);
-}
-.ra-logo i:nth-child(2) { background: #d8f0eb; }
-.ra-logo i:nth-child(3) { background: #f4d7bc; }
-.ra-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-.ra-links a {
-  color: #fff;
-  text-decoration: none;
-  padding: 9px 14px;
-  border-radius: 30px;
-  font-size: 13px;
-  line-height: 1.5;
-}
-.ra-links a:hover, .ra-links a.ra-active {
-  background: var(--ra-cream);
-  color: var(--ra-deep);
-}
-.ra-draw {
-  color: var(--ra-cream);
-  border: 1px solid var(--ra-border);
-  border-radius: 30px;
-  padding: 9px 14px;
-  white-space: nowrap;
-  font-size: 12px;
-}
-.ra-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: var(--ra-gold);
-  border-radius: 50%;
-  margin-right: 7px;
-}
-
-/* HERO */
-.ra-hero {
-  position: relative;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(20,112,106,.35), transparent 31%),
-    radial-gradient(circle at 0% 100%, rgba(10,101,97,.2), transparent 36%),
-    var(--ra-bg);
-  padding: 66px 0 54px;
-  border-bottom: 1px solid var(--ra-border);
-}
-.ra-hero:after {
-  content: "";
-  position: absolute;
-  width: 240px;
-  height: 240px;
-  right: -105px;
-  top: -100px;
-  border-radius: 50%;
-  background: rgba(255,197,46,.06);
-  border: 1px solid rgba(255,197,46,.09);
-  pointer-events: none;
-}
-.ra-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--ra-gold);
-  background: rgba(255,197,46,.09);
-  border: 1px solid rgba(255,197,46,.2);
-  border-radius: 30px;
-  padding: 6px 13px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .7px;
-  text-transform: uppercase;
-}
-.ra-hero h1 {
-  color: #fff;
-  font-size: clamp(32px, 5vw, 52px);
-  line-height: 1.14;
-  letter-spacing: -1.5px;
-  max-width: 900px;
-  margin: 22px 0 20px;
-  font-weight: 800;
-}
-.ra-hero h1 em {
-  color: var(--ra-gold);
-  font-style: normal;
-}
-.ra-lead {
-  color: #d9e9e6;
-  max-width: 830px;
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 0 0 22px;
-}
-.ra-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  color: var(--ra-muted);
-  font-size: 13px;
-}
-.ra-meta span {
-  background: rgba(255,255,255,.045);
-  padding: 8px 12px;
-  border-radius: 8px;
-}
-.ra-hero-note {
-  display: inline-block;
-  margin-top: 22px;
-  color: var(--ra-deep);
-  background: var(--ra-gold);
-  padding: 11px 19px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  text-decoration: none !important;
-}
-.ra-hero-note:hover {
-  background: #ffe08a;
-  color: var(--ra-deep) !important;
-}
-
-/* ARTICLE LAYOUT */
-.ra-content {
-  padding: 55px 0 65px;
-}
-.ra-article-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 270px;
-  gap: 36px;
-  align-items: start;
-}
-.ra-article {
-  min-width: 0;
-  padding: 0;
-}
-.ra-article h2 {
-  color: #fff;
-  font-size: clamp(23px, 3vw, 29px);
-  line-height: 1.35;
-  letter-spacing: -.5px;
-  margin: 48px 0 15px;
-  padding-left: 16px;
-  border-left: 4px solid var(--ra-gold);
-  scroll-margin-top: 25px;
-}
-.ra-article h2:first-child { margin-top: 0; }
-.ra-article h3 {
-  color: var(--ra-gold);
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 26px 0 8px;
-}
-.ra-article p {
-  color: #d1e2df;
-  margin: 0 0 19px;
-  font-size: 16px;
-  line-height: 1.9;
-}
-.ra-article strong { color: var(--ra-cream); }
-.ra-inline-link {
-  color: var(--ra-gold) !important;
-  font-weight: 700;
-  text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 4px;
-  background: rgba(255,197,46,.12);
-  padding: 1px 4px;
-  border-radius: 3px;
-}
-.ra-inline-link:hover { background: rgba(255,197,46,.23); }
-
-/* TABLE OF CONTENTS */
-.ra-sidebar {
-  position: sticky;
-  top: 20px;
-}
-.ra-side-card {
-  background: var(--ra-deep);
-  border: 1px solid var(--ra-border);
-  border-radius: 14px;
-  padding: 22px;
-  margin-bottom: 18px;
-}
-.ra-side-card h3 {
-  margin: 0 0 14px;
-  color: var(--ra-gold);
-  font-size: 17px;
-  line-height: 1.5;
-}
-.ra-toc {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.ra-toc li { margin: 0; padding: 0; }
-.ra-toc a {
-  display: block;
-  color: #d1e2df;
-  text-decoration: none;
-  font-size: 13px;
-  line-height: 1.55;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--ra-border);
-}
-.ra-toc li:last-child a { border-bottom: 0; }
-.ra-toc a:hover { color: var(--ra-gold); }
-.ra-side-card p {
-  color: var(--ra-muted);
-  font-size: 13px;
-  line-height: 1.8;
-  margin: 0;
-}
-.ra-tip {
-  border-left: 3px solid var(--ra-gold);
-  background: rgba(255,197,46,.07);
-  border-radius: 0 8px 8px 0;
-  padding: 14px;
-  margin-top: 18px;
-}
-.ra-tip strong { color: var(--ra-gold); }
-
-/* FAQ */
-.ra-faq {
-  margin-top: 50px;
-  padding-top: 10px;
-  border-top: 1px solid var(--ra-border);
-}
-.ra-faq > h2 { margin-top: 30px; }
-.ra-faq-item {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--ra-border);
-}
-.ra-faq-item h3 { margin: 0 0 8px; }
-.ra-faq-item p { margin-bottom: 0; }
-
-/* CONCLUSION */
-.ra-conclusion {
-  background: linear-gradient(135deg, #0b4142, #082e33);
-  border: 1px solid var(--ra-border);
-  border-radius: 15px;
-  padding: 26px;
-  margin-top: 38px;
-}
-.ra-conclusion h2 { margin-top: 0; }
-.ra-conclusion p:last-child { margin-bottom: 0; }
-
-/* FOOTER */
-.ra-footer {
-  background: var(--ra-deep);
-  border-top: 1px solid var(--ra-border);
-}
-.ra-footer-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr 1fr;
-  gap: 35px;
-  padding-top: 42px;
-  padding-bottom: 36px;
-}
-.ra-footer .ra-brand { font-size: 19px; }
-.ra-footer p {
-  color: var(--ra-muted);
-  font-size: 13px;
-  line-height: 1.8;
-  margin: 15px 0;
-}
-.ra-footer h3 {
-  color: #fff;
-  font-size: 15px;
-  margin: 3px 0 14px;
-}
-.ra-footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.ra-footer-list li { margin: 7px 0; }
-.ra-footer-list a {
-  color: var(--ra-muted);
-  font-size: 13px;
-  text-decoration: none;
-}
-.ra-footer-list a:hover { color: var(--ra-gold); }
-.ra-footer-bottom {
-  border-top: 1px solid var(--ra-border);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.ra-footer-bottom p {
-  margin: 0;
-  font-size: 12px;
-}
-.ra-legal { display: flex; gap: 18px; flex-wrap: wrap; }
-.ra-legal a { color: var(--ra-muted); font-size: 12px; text-decoration: none; }
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .ra-nav { justify-content: center; }
-  .ra-links { order: 3; width: 100%; }
-  .ra-article-layout { grid-template-columns: minmax(0,1fr); }
-  .ra-sidebar {
-    position: static;
-    order: -1;
-  }
-  .ra-toc {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    column-gap: 20px;
-  }
-  .ra-footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-}
-@media (max-width: 560px) {
-  .ra-container { width: 90%; }
-  .ra-nav { gap: 12px; }
-  .ra-brand { font-size: 19px; }
-  .ra-draw { font-size: 11px; }
-  .ra-links { gap: 3px; }
-  .ra-links a { font-size: 12px; padding: 7px 9px; }
-  .ra-hero { padding: 42px 0 38px; }
-  .ra-hero h1 { font-size: 34px; letter-spacing: -.8px; }
-  .ra-lead { font-size: 16px; }
-  .ra-content { padding: 36px 0 45px; }
-  .ra-article h2 { margin-top: 37px; font-size: 24px; }
-  .ra-article p { font-size: 15px; }
-  .ra-side-card { padding: 17px; }
-  .ra-toc { grid-template-columns: 1fr; }
-  .ra-footer-grid { grid-template-columns: 1fr; gap: 22px; }
-  .ra-conclusion { padding: 19px; }
-  .ra-footer-bottom { align-items: flex-start; }
-}
+:root{--bg:#062f34;--deep:#03252b;--panel:#0b3c40;--gold:#ffc52e;--cream:#fff4df;--muted:#b9d3d2;--border:rgba(173,222,215,.17)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font:16px/1.8 Arial,Helvetica,sans-serif}.container{width:min(1120px,92%);margin:auto}a{color:var(--gold)}a:hover{color:#fff0b1}.header{background:var(--deep);border-bottom:1px solid var(--border)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;padding:12px 0}.brand{display:inline-flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-size:21px;font-weight:800;letter-spacing:-.6px;line-height:1.3}.brand-name span{color:var(--gold)}.logo{display:flex;align-items:center;padding-left:2px}.logo i{display:block;width:21px;height:21px;margin-left:-5px;border:2px solid var(--deep);border-radius:50%;background:var(--gold)}.logo i:nth-child(2){background:#d8f0eb}.logo i:nth-child(3){background:#f4d7bc}.links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px}.links a{color:#fff;text-decoration:none;padding:9px 12px;border-radius:30px;font-size:13px;line-height:1.5}.links a:hover,.links a.active{background:var(--cream);color:var(--deep)}.draw{color:var(--cream);border:1px solid var(--border);border-radius:30px;padding:9px 14px;white-space:nowrap;font-size:12px}.dot{display:inline-block;width:8px;height:8px;background:var(--gold);border-radius:50%;margin-right:7px}.hero{position:relative;background:radial-gradient(circle at 100% 0%,rgba(20,112,106,.35),transparent 31%),radial-gradient(circle at 0% 100%,rgba(10,101,97,.2),transparent 36%),var(--bg);padding:66px 0 54px;border-bottom:1px solid var(--border);overflow:hidden}.hero:after{content:"";position:absolute;width:240px;height:240px;right:-105px;top:-100px;border-radius:50%;background:rgba(255,197,46,.06);border:1px solid rgba(255,197,46,.09);pointer-events:none}.eyebrow{display:inline-flex;align-items:center;color:var(--gold);background:rgba(255,197,46,.09);border:1px solid rgba(255,197,46,.2);border-radius:30px;padding:6px 13px;font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase}.hero h1{color:#fff;font-size:clamp(32px,5vw,52px);line-height:1.14;letter-spacing:-1.5px;max-width:900px;margin:22px 0 20px;font-weight:800}.hero h1 em{color:var(--gold);font-style:normal}.lead{color:#d9e9e6;max-width:830px;font-size:18px;line-height:1.8;margin:0 0 22px}.meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px}.meta span{background:rgba(255,255,255,.045);padding:8px 12px;border-radius:8px}.hero-cta{display:inline-block;margin-top:22px;color:var(--deep);background:var(--gold);padding:11px 19px;border-radius:30px;font-weight:700;font-size:13px;text-decoration:none}.hero-cta:hover{background:#ffe08a;color:var(--deep)}.content{padding:55px 0 65px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:36px;align-items:start}.article{min-width:0}.article h2{color:#fff;font-size:clamp(23px,3vw,29px);line-height:1.35;letter-spacing:-.5px;margin:48px 0 15px;padding-left:16px;border-left:4px solid var(--gold);scroll-margin-top:25px}.article h2:first-child{margin-top:0}.article h3{color:var(--gold);font-size:18px;line-height:1.5;margin:26px 0 8px}.article p{color:#d1e2df;margin:0 0 19px;font-size:16px;line-height:1.9}.article strong{color:var(--cream)}.naked-link{color:var(--gold);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;background:rgba(255,197,46,.12);padding:1px 4px;border-radius:3px;overflow-wrap:anywhere}.sidebar{position:sticky;top:20px}.side-card{background:var(--deep);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:18px}.side-card h3{margin:0 0 14px;color:var(--gold);font-size:17px}.toc{list-style:none;padding:0;margin:0}.toc li{margin:0;padding:0}.toc a{display:block;color:#d1e2df;text-decoration:none;font-size:13px;line-height:1.55;padding:8px 0;border-bottom:1px solid var(--border)}.toc li:last-child a{border-bottom:0}.toc a:hover{color:var(--gold)}.side-card p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}.tip{border-left:3px solid var(--gold);background:rgba(255,197,46,.07);border-radius:0 8px 8px 0;padding:14px;margin-top:18px}.tip strong{color:var(--gold)}.faq{margin-top:50px;padding-top:10px;border-top:1px solid var(--border)}.faq>h2{margin-top:30px}.faq-item{padding:20px 0;border-bottom:1px solid var(--border)}.faq-item h3{margin:0 0 8px}.faq-item p{margin-bottom:0}.conclusion{background:linear-gradient(135deg,#0b4142,#082e33);border:1px solid var(--border);border-radius:15px;padding:26px;margin-top:38px}.conclusion h2{margin-top:0}.conclusion p:last-child{margin-bottom:0}.footer{background:var(--deep);border-top:1px solid var(--border)}.footer-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:35px;padding-top:42px;padding-bottom:36px}.footer .brand{font-size:19px}.footer p{color:var(--muted);font-size:13px;line-height:1.8;margin:15px 0}.footer h3{color:#fff;font-size:15px;margin:3px 0 14px}.footer-list{list-style:none;padding:0;margin:0}.footer-list li{margin:7px 0}.footer-list a{color:var(--muted);font-size:13px;text-decoration:none}.footer-list a:hover{color:var(--gold)}.footer-bottom{border-top:1px solid var(--border);padding-top:17px;padding-bottom:17px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.footer-bottom p{margin:0;font-size:12px}.legal{display:flex;gap:18px;flex-wrap:wrap}.legal a{color:var(--muted);font-size:12px;text-decoration:none}
+@media(max-width:900px){.nav{justify-content:center}.links{order:3;width:100%}.layout{grid-template-columns:minmax(0,1fr)}.sidebar{position:static;order:-1}.toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.container{width:90%}.nav{gap:12px}.brand{font-size:19px}.draw{font-size:11px}.links{gap:3px}.links a{font-size:12px;padding:7px 9px}.hero{padding:42px 0 38px}.hero h1{font-size:34px;letter-spacing:-.8px}.lead{font-size:16px}.content{padding:36px 0 45px}.article h2{margin-top:37px;font-size:24px}.article p{font-size:15px}.side-card{padding:17px}.toc{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:22px}.conclusion{padding:19px}.footer-bottom{align-items:flex-start}}
 </style>
-
-<div class="ra-page">
-
-  <!-- HEADER -->
-  <header class="ra-header">
-    <div class="ra-container ra-nav">
-      <a class="ra-brand" href="https://resultadosanguila.com/" aria-label="Resultados Anguila inicio">
-        <span class="ra-logo" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span style="color:#fff">Resultados <span>Anguila</span></span>
-      </a>
-
-      <nav class="ra-links" aria-label="Navegación principal">
-        <a class="ra-active" href="https://resultadosanguila.com/">Inicio</a>
-        <a href="#resultados-anteriores">Historial</a>
-        <a href="#horarios-sorteos">Horarios</a>
-        <a href="#resultados-precisos">Información</a>
-        <a href="#preguntas-frecuentes">Preguntas frecuentes</a>
-      </nav>
-
-      <div class="ra-draw"><span class="ra-dot"></span>Guía de resultados</div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="ra-hero">
-    <div class="ra-container">
-      <div class="ra-eyebrow"><span class="ra-dot"></span>Guía informativa</div>
-
-      <h1>Resultados Anguila: <em>Guía Completa</em> de Resultados, Actualizaciones e Historial</h1>
-
-      <p class="ra-lead">
-        Descubre cómo consultar los resultados de la lotería de Anguila,
-        revisar sorteos anteriores, comprender los horarios y encontrar
-        información clara de manera sencilla y organizada.
-      </p>
-
-      <div class="ra-meta">
-        <span>Guía de consulta</span>
-        <span>Resultados e historial</span>
-        <span>Juego responsable</span>
-      </div>
-
-      <a class="ra-hero-note" href="#guia-resultados">Explorar la guía ↓</a>
-    </div>
-  </section>
-
-  <!-- ARTICLE -->
-  <main class="ra-content" id="guia-resultados">
-    <div class="ra-container ra-article-layout">
-
-      <article class="ra-article">
-
-        <p>Si buscas información sobre los resultados de la lotería de Anguila, puedes visitar <a href="https://resultadosanguila.com/">https://resultadosanguila.com/</a para explorar contenido relacionado con resultados, sorteos y números anteriores. Conocer las fechas, consultar fuentes confiables y revisar la información disponible puede ayudarte a encontrar los datos que necesitas de una manera sencilla y organizada.</p>
-
-        <h2 id="que-son-resultados">¿Qué Son los Resultados de Anguila?</h2>
-
-        <p>Los resultados de la lotería de Anguila son los números publicados después de determinados sorteos. Muchas personas consultan esta información para conocer los números anunciados, revisar resultados anteriores o comparar datos de diferentes fechas. Comprender cómo se presentan los resultados facilita la búsqueda de información.</p>
-
-        <p>Consultar resultados por internet es una opción cómoda para quienes desean ahorrar tiempo. En lugar de visitar diferentes páginas sin una dirección clara, los usuarios pueden buscar sitios que organicen la información por fechas, horarios y tipos de sorteos.</p>
-
-        <h2 id="consultar-internet">¿Por Qué Consultar los Resultados de Anguila por Internet?</h2>
-
-        <p>La información disponible en internet permite acceder a resultados y actualizaciones desde diferentes dispositivos. Los usuarios pueden buscar números publicados, revisar sorteos anteriores y consultar información relacionada con los horarios. Una página bien organizada facilita la navegación y mejora la experiencia de lectura.</p>
-
-        <p>Otra ventaja es la posibilidad de comparar información entre distintas fuentes. Esto resulta útil cuando una actualización tarda en aparecer o cuando dos páginas muestran datos diferentes. Consultar fuentes confiables ayuda a reducir la confusión y permite comprender mejor la información disponible.</p>
-
-        <h2 id="como-consultar">Cómo Consultar los Resultados de Anguila</h2>
-
-        <p>Consultar los resultados suele ser sencillo si sigues algunos pasos básicos. Primero, visita una página que publique información sobre los sorteos de Anguila. Después, identifica el sorteo correspondiente, comprueba la fecha y compara los números con una fuente confiable.</p>
-
-        <p>Presta especial atención a la fecha y al horario del sorteo. Algunas páginas mantienen resultados anteriores junto a las actualizaciones recientes. Comprobar estos detalles te ayudará a evitar confusiones entre los números de un sorteo pasado y los resultados más recientes.</p>
-
-        <h2 id="horarios-sorteos">Comprender los Diferentes Horarios de los Sorteos</h2>
-
-        <p>Dependiendo del operador y del calendario correspondiente, puede haber diferentes sorteos durante el día. Algunas páginas organizan los resultados en categorías como mañana, tarde y noche para que los visitantes encuentren más fácilmente la información que buscan.</p>
-
-        <p>Sin embargo, los horarios pueden variar según la fuente y las condiciones del sorteo. Antes de confiar en una hora publicada, revisa la información más reciente del operador correspondiente y comprueba la zona horaria utilizada por la página.</p>
-
-        <h2 id="resultados-precisos">La Importancia de Consultar Resultados Precisos</h2>
-
-        <p>La precisión es fundamental cuando se consulta información sobre loterías en internet. Un pequeño error en un número o una fecha puede generar confusión. Por eso, no conviene asumir que todos los resultados publicados en páginas de terceros han sido verificados oficialmente.</p>
-
-        <p>Siempre que sea posible, compara los datos con un anuncio oficial u otra fuente confiable. Si una página no explica de dónde obtiene sus resultados, interpreta la información con precaución. Las fuentes transparentes y las actualizaciones claras ayudan a generar confianza.</p>
-
-        <h2 id="resultados-anteriores">Consultar Resultados Anteriores de Anguila</h2>
-
-        <p>Los resultados históricos permiten revisar sorteos publicados anteriormente. Una sección bien organizada puede incluir fechas, nombres de sorteos y números anteriores, facilitando la búsqueda de registros específicos sin tener que explorar numerosas páginas.</p>
-
-        <p>Al consultar el historial, comprueba que la fecha coincida con el sorteo que deseas encontrar. Algunas páginas muestran primero los resultados más recientes, mientras que otras utilizan diferentes sistemas de organización. Revisar las fechas y los detalles evita errores al comparar registros antiguos.</p>
-
-        <h2 id="predicciones">¿Los Resultados Anteriores Pueden Predecir Números Futuros?</h2>
-
-        <p>Los resultados anteriores pueden ser interesantes para consultar, pero no permiten predecir de forma fiable los números ganadores de futuros sorteos. Cada sorteo debe entenderse como un acontecimiento independiente cuando así lo establecen sus reglas.</p>
-
-        <p>Por ejemplo, que un número haya aparecido varias veces en el pasado no significa que tenga más probabilidades de aparecer en el próximo sorteo. Del mismo modo, un número que lleva tiempo sin aparecer no está destinado a salir pronto.</p>
-
-        <h2 id="pagina-util">Cómo Elegir una Página Útil de Información</h2>
-
-        <p>Una buena página de información sobre loterías debe presentar el contenido de manera clara y sencilla. Los títulos descriptivos, las fechas visibles, los textos fáciles de leer y una navegación intuitiva ayudan a encontrar información sin perder demasiado tiempo.</p>
-
-        <p>También resulta útil que la página diferencie los resultados recientes de los registros históricos. Los visitantes deberían poder identificar las fechas, conocer cuándo se publicó la información y comprobar si los datos han sido verificados. La transparencia es más valiosa que las promesas sin fundamento.</p>
-
-        <h2 id="movil">Consultar Resultados Desde el Teléfono Móvil</h2>
-
-        <p>Muchas personas utilizan sus teléfonos móviles para consultar información en internet. Una página adaptada a dispositivos móviles debe mostrar textos legibles, cargar correctamente y permitir que los visitantes naveguen entre diferentes secciones sin dificultades.</p>
-
-        <p>Un diseño sencillo puede mejorar la experiencia de los usuarios nuevos y habituales. Las páginas que presentan la información en secciones claras suelen resultar más fáciles de utilizar. Una carga rápida y una estructura ordenada también facilitan la consulta desde cualquier lugar.</p>
-
-        <h2 id="errores-comunes">Errores Comunes que Conviene Evitar</h2>
-
-        <p>Un error frecuente consiste en revisar los números sin comprobar la fecha del sorteo. Otro problema es asumir que cualquier resultado publicado en una página no oficial ha sido confirmado por el operador correspondiente. Estos descuidos pueden provocar malentendidos.</p>
-
-        <p>También conviene desconfiar de las páginas que prometen números ganadores garantizados. Ningún sitio puede asegurar de manera fiable los resultados de futuros sorteos. Ten cuidado con las predicciones de pago, la publicidad engañosa y las solicitudes de información personal o financiera de fuentes desconocidas.</p>
-
-        <h2 id="juego-responsable">Participar en Loterías de Forma Responsable</h2>
-
-        <p>Participar en una lotería implica un riesgo económico, por lo que es importante mantener expectativas realistas. Los resultados deben entenderse como información sobre sorteos y no como una promesa de ganancias futuras. Ninguna estrategia elimina la incertidumbre de un sorteo aleatorio.</p>
-
-        <p>Si decides participar, establece un presupuesto que puedas permitirte perder y evita pedir dinero prestado para jugar. Nunca consideres la lotería una fuente segura de ingresos. También debes respetar las leyes y los requisitos de edad aplicables en tu lugar de residencia.</p>
-
-        <!-- FAQ -->
-        <section class="ra-faq" id="preguntas-frecuentes">
-          <h2>Preguntas Frecuentes</h2>
-
-          <div class="ra-faq-item">
-            <h3>¿Dónde Puedo Consultar los Resultados de Anguila?</h3>
-            <p>Puedes buscar en internet páginas que publiquen información sobre los resultados de Anguila. Antes de confiar en los números mostrados, verifica la fecha, los detalles del sorteo y los datos disponibles mediante una fuente oficial o confiable.</p>
-          </div>
-
-          <div class="ra-faq-item">
-            <h3>¿Con Qué Frecuencia Se Actualizan los Resultados?</h3>
-            <p>La frecuencia de actualización depende de cada página y de sus fuentes de información. Algunos sitios publican los resultados poco después del sorteo, mientras que otros pueden presentar retrasos. Comprueba la fecha de publicación y consulta al operador correspondiente para confirmar los datos.</p>
-          </div>
-
-          <div class="ra-faq-item">
-            <h3>¿Puedo Consultar Resultados de Sorteos Anteriores?</h3>
-            <p>Sí, algunas páginas ofrecen registros históricos de sorteos. Estos archivos pueden ayudarte a localizar resultados anteriores cuando existe una sección de historial accesible. Comprueba siempre la fecha y los detalles del sorteo antes de comparar los números.</p>
-          </div>
-
-          <div class="ra-faq-item">
-            <h3>¿Las Predicciones de Lotería Son Seguras?</h3>
-            <p>No. Las predicciones de lotería no garantizan números ganadores. El historial puede servir para revisar resultados anteriores, pero no permite determinar con certeza lo que ocurrirá en un sorteo futuro.</p>
-          </div>
-
-          <div class="ra-faq-item">
-            <h3>¿Por Qué Es Importante Verificar los Números Publicados?</h3>
-            <p>La verificación ayuda a evitar errores relacionados con información desactualizada, incompleta o incorrecta. Si necesitas confirmar un resultado para un propósito oficial, consulta al operador correspondiente y sigue sus instrucciones para comprobar los boletos premiados.</p>
-          </div>
-        </section>
-
-        <!-- CONCLUSION -->
-        <section class="ra-conclusion" id="conclusion">
-          <h2>Conclusión</h2>
-
-          <p>Encontrar información sobre los resultados de Anguila debería ser una experiencia sencilla, basada en la claridad, la precisión y la responsabilidad. Comprobar las fechas, comparar los números con fuentes confiables y comprender las limitaciones de los datos históricos permite consultar la información con mayor confianza.</p>
-
-          <p>Tanto si buscas actualizaciones recientes como si deseas revisar sorteos anteriores, recuerda que la información precisa es más importante que las predicciones o las promesas. Utiliza los recursos disponibles con criterio, protege tus datos personales y no asumas que los resultados pasados garantizan el éxito futuro.</p>
-        </section>
-
-      </article>
-
-      <!-- SIDEBAR -->
-      <aside class="ra-sidebar">
-        <div class="ra-side-card">
-          <h3>En esta guía</h3>
-          <ul class="ra-toc">
-            <li><a href="#que-son-resultados">¿Qué son los resultados?</a></li>
-            <li><a href="#consultar-internet">Consultar por internet</a></li>
-            <li><a href="#como-consultar">Cómo consultar resultados</a></li>
-            <li><a href="#horarios-sorteos">Horarios de los sorteos</a></li>
-            <li><a href="#resultados-precisos">Precisión y verificación</a></li>
-            <li><a href="#resultados-anteriores">Resultados anteriores</a></li>
-            <li><a href="#predicciones">Predicciones futuras</a></li>
-            <li><a href="#pagina-util">Elegir una página útil</a></li>
-            <li><a href="#movil">Consulta desde el móvil</a></li>
-            <li><a href="#errores-comunes">Errores comunes</a></li>
-            <li><a href="#juego-responsable">Juego responsable</a></li>
-            <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
-            <li><a href="#conclusion">Conclusión</a></li>
-          </ul>
-        </div>
-
-        <div class="ra-side-card">
-          <h3>Información importante</h3>
-          <p>Comprueba las fechas y los datos publicados. Siempre que sea posible, verifica los resultados mediante fuentes oficiales o confiables.</p>
-          <div class="ra-tip">
-            <strong>Juega con responsabilidad</strong>
-            <p style="margin-top:7px">Los resultados pasados no garantizan ganancias futuras. No gastes más de lo que puedes permitirte perder.</p>
-          </div>
-        </div>
-      </aside>
-
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="ra-footer">
-    <div class="ra-container ra-footer-grid">
-
-      <div>
-        <a class="ra-brand" href="https://resultadosanguila.com/">
-          <span class="ra-logo" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span style="color:#fff">Resultados <span>Anguila</span></span>
-        </a>
-        <p>Tu guía informativa para comprender los resultados de Anguila, consultar registros anteriores y encontrar información de forma clara y responsable.</p>
-      </div>
-
-      <div>
-        <h3>Enlaces rápidos</h3>
-        <ul class="ra-footer-list">
-          <li><a href="https://resultadosanguila.com/">Inicio</a></li>
-          <li><a href="#resultados-anteriores">Resultados anteriores</a></li>
-          <li><a href="#horarios-sorteos">Horarios de sorteos</a></li>
-          <li><a href="#resultados-precisos">Verificación de resultados</a></li>
-          <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Información para lectores</h3>
-        <ul class="ra-footer-list">
-          <li><a href="#como-consultar">Cómo consultar resultados</a></li>
-          <li><a href="#predicciones">Historial y predicciones</a></li>
-          <li><a href="#movil">Acceso desde móviles</a></li>
-          <li><a href="#juego-responsable">Juego responsable</a></li>
-          <li><a href="#conclusion">Acerca de esta guía</a></li>
-        </ul>
-        <p>El contenido es informativo y no garantiza resultados ni premios.</p>
-      </div>
-
-    </div>
-
-    <div class="ra-container ra-footer-bottom">
-      <p>© 2026 Resultados Anguila. Todos los derechos reservados.</p>
-      <div class="ra-legal">
-        <a href="#juego-responsable">Juego responsable</a>
-        <a href="#resultados-precisos">Verificación de información</a>
-        <a href="https://resultadosanguila.com/">Inicio</a>
-      </div>
-    </div>
-  </footer>
-
+</head>
+<body>
+<div class="page">
+<header class="header"><div class="container nav">
+<a class="brand" href="https://resultadosanguila.com/" aria-label="Resultados Anguila inicio"><span class="logo" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Resultados <span>Anguila</span></span></a>
+<nav class="links" aria-label="Navegación principal"><a class="active" href="https://resultadosanguila.com/">Inicio</a><a href="#resultados-anteriores">Historial</a><a href="#horarios-sorteos">Horarios</a><a href="#resultados-precisos">Información</a><a href="#preguntas-frecuentes">Preguntas frecuentes</a></nav>
+<div class="draw"><span class="dot"></span>Guía de resultados</div>
+</div></header>
+<section class="hero"><div class="container"><div class="eyebrow"><span class="dot"></span>Guía informativa</div>
+<h1>Resultados Anguila: <em>Guía Completa</em> de Resultados, Actualizaciones e Historial</h1>
+<p class="lead">Descubre cómo consultar los resultados de la lotería de Anguila, revisar sorteos anteriores, comprender los horarios y encontrar información clara de manera sencilla y organizada.</p>
+<div class="meta"><span>Guía de consulta</span><span>Resultados e historial</span><span>Juego responsable</span></div><a class="hero-cta" href="#guia-resultados">Explorar la guía ↓</a></div></section>
+<main class="content" id="guia-resultados"><div class="container layout"><article class="article">
+<p>Si buscas información sobre los resultados de la lotería de Anguila, puedes visitar <a class="naked-link" href="https://resultadosanguila.com/">https://resultadosanguila.com/</a> para explorar contenido relacionado con resultados, sorteos y números anteriores. Conocer las fechas, consultar fuentes confiables y revisar la información disponible puede ayudarte a encontrar los datos que necesitas de una manera sencilla y organizada.</p>
+<h2 id="que-son-resultados">¿Qué Son los Resultados de Anguila?</h2>
+<p>Los resultados de la lotería de Anguila son los números publicados después de determinados sorteos. Muchas personas consultan esta información para conocer los números anunciados, revisar resultados anteriores o comparar datos de diferentes fechas. Comprender cómo se presentan los resultados facilita la búsqueda de información.</p>
+<p>Consultar resultados por internet es una opción cómoda para quienes desean ahorrar tiempo. En lugar de visitar diferentes páginas sin una dirección clara, los usuarios pueden buscar sitios que organicen la información por fechas, horarios y tipos de sorteos.</p>
+<h2 id="consultar-internet">¿Por Qué Consultar los Resultados de Anguila por Internet?</h2>
+<p>La información disponible en internet permite acceder a resultados y actualizaciones desde diferentes dispositivos. Los usuarios pueden buscar números publicados, revisar sorteos anteriores y consultar información relacionada con los horarios. Una página bien organizada facilita la navegación y mejora la experiencia de lectura.</p>
+<p>Otra ventaja es la posibilidad de comparar información entre distintas fuentes. Esto resulta útil cuando una actualización tarda en aparecer o cuando dos páginas muestran datos diferentes. Consultar fuentes confiables ayuda a reducir la confusión y permite comprender mejor la información disponible.</p>
+<h2 id="como-consultar">Cómo Consultar los Resultados de Anguila</h2>
+<p>Consultar los resultados suele ser sencillo si sigues algunos pasos básicos. Primero, visita una página que publique información sobre los sorteos de Anguila. Después, identifica el sorteo correspondiente, comprueba la fecha y compara los números con una fuente confiable.</p>
+<p>Presta especial atención a la fecha y al horario del sorteo. Algunas páginas mantienen resultados anteriores junto a las actualizaciones recientes. Comprobar estos detalles te ayudará a evitar confusiones entre los números de un sorteo pasado y los resultados más recientes.</p>
+<h2 id="horarios-sorteos">Comprender los Diferentes Horarios de los Sorteos</h2>
+<p>Dependiendo del operador y del calendario correspondiente, puede haber diferentes sorteos durante el día. Algunas páginas organizan los resultados en categorías como mañana, tarde y noche para que los visitantes encuentren más fácilmente la información que buscan.</p>
+<p>Sin embargo, los horarios pueden variar según la fuente y las condiciones del sorteo. Antes de confiar en una hora publicada, revisa la información más reciente del operador correspondiente y comprueba la zona horaria utilizada por la página.</p>
+<h2 id="resultados-precisos">La Importancia de Consultar Resultados Precisos</h2>
+<p>La precisión es fundamental cuando se consulta información sobre loterías en internet. Un pequeño error en un número o una fecha puede generar confusión. Por eso, no conviene asumir que todos los resultados publicados en páginas de terceros han sido verificados oficialmente.</p>
+<p>Siempre que sea posible, compara los datos con un anuncio oficial u otra fuente confiable. Si una página no explica de dónde obtiene sus resultados, interpreta la información con precaución. Las fuentes transparentes y las actualizaciones claras ayudan a generar confianza.</p>
+<h2 id="resultados-anteriores">Consultar Resultados Anteriores de Anguila</h2>
+<p>Los resultados históricos permiten revisar sorteos publicados anteriormente. Una sección bien organizada puede incluir fechas, nombres de sorteos y números anteriores, facilitando la búsqueda de registros específicos sin tener que explorar numerosas páginas.</p>
+<p>Al consultar el historial, comprueba que la fecha coincida con el sorteo que deseas encontrar. Algunas páginas muestran primero los resultados más recientes, mientras que otras utilizan diferentes sistemas de organización. Revisar las fechas y los detalles evita errores al comparar registros antiguos.</p>
+<h2 id="predicciones">¿Los Resultados Anteriores Pueden Predecir Números Futuros?</h2>
+<p>Los resultados anteriores pueden ser interesantes para consultar, pero no permiten predecir de forma fiable los números ganadores de futuros sorteos. Cada sorteo debe entenderse como un acontecimiento independiente cuando así lo establecen sus reglas.</p>
+<p>Por ejemplo, que un número haya aparecido varias veces en el pasado no significa que tenga más probabilidades de aparecer en el próximo sorteo. Del mismo modo, un número que lleva tiempo sin aparecer no está destinado a salir pronto.</p>
+<h2 id="pagina-util">Cómo Elegir una Página Útil de Información</h2>
+<p>Una buena página de información sobre loterías debe presentar el contenido de manera clara y sencilla. Los títulos descriptivos, las fechas visibles, los textos fáciles de leer y una navegación intuitiva ayudan a encontrar información sin perder demasiado tiempo.</p>
+<p>También resulta útil que la página diferencie los resultados recientes de los registros históricos. Los visitantes deberían poder identificar las fechas, conocer cuándo se publicó la información y comprobar si los datos han sido verificados. La transparencia es más valiosa que las promesas sin fundamento.</p>
+<h2 id="movil">Consultar Resultados Desde el Teléfono Móvil</h2>
+<p>Muchas personas utilizan sus teléfonos móviles para consultar información en internet. Una página adaptada a dispositivos móviles debe mostrar textos legibles, cargar correctamente y permitir que los visitantes naveguen entre diferentes secciones sin dificultades.</p>
+<p>Un diseño sencillo puede mejorar la experiencia de los usuarios nuevos y habituales. Las páginas que presentan la información en secciones claras suelen resultar más fáciles de utilizar. Una carga rápida y una estructura ordenada también facilitan la consulta desde cualquier lugar.</p>
+<h2 id="errores-comunes">Errores Comunes que Conviene Evitar</h2>
+<p>Un error frecuente consiste en revisar los números sin comprobar la fecha del sorteo. Otro problema es asumir que cualquier resultado publicado en una página no oficial ha sido confirmado por el operador correspondiente. Estos descuidos pueden provocar malentendidos.</p>
+<p>También conviene desconfiar de las páginas que prometen números ganadores garantizados. Ningún sitio puede asegurar de manera fiable los resultados de futuros sorteos. Ten cuidado con las predicciones de pago, la publicidad engañosa y las solicitudes de información personal o financiera de fuentes desconocidas.</p>
+<h2 id="juego-responsable">Participar en Loterías de Forma Responsable</h2>
+<p>Participar en una lotería implica un riesgo económico, por lo que es importante mantener expectativas realistas. Los resultados deben entenderse como información sobre sorteos y no como una promesa de ganancias futuras. Ninguna estrategia elimina la incertidumbre de un sorteo aleatorio.</p>
+<p>Si decides participar, establece un presupuesto que puedas permitirte perder y evita pedir dinero prestado para jugar. Nunca consideres la lotería una fuente segura de ingresos. También debes respetar las leyes y los requisitos de edad aplicables en tu lugar de residencia.</p>
+<section class="faq" id="preguntas-frecuentes"><h2>Preguntas Frecuentes</h2>
+<div class="faq-item"><h3>¿Dónde Puedo Consultar los Resultados de Anguila?</h3><p>Puedes buscar en internet páginas que publiquen información sobre los resultados de Anguila. Antes de confiar en los números mostrados, verifica la fecha, los detalles del sorteo y los datos disponibles mediante una fuente oficial o confiable.</p></div>
+<div class="faq-item"><h3>¿Con Qué Frecuencia Se Actualizan los Resultados?</h3><p>La frecuencia de actualización depende de cada página y de sus fuentes de información. Algunos sitios publican los resultados poco después del sorteo, mientras que otros pueden presentar retrasos. Comprueba la fecha de publicación y consulta al operador correspondiente para confirmar los datos.</p></div>
+<div class="faq-item"><h3>¿Puedo Consultar Resultados de Sorteos Anteriores?</h3><p>Sí, algunas páginas ofrecen registros históricos de sorteos. Estos archivos pueden ayudarte a localizar resultados anteriores cuando existe una sección de historial accesible. Comprueba siempre la fecha y los detalles del sorteo antes de comparar los números.</p></div>
+<div class="faq-item"><h3>¿Las Predicciones de Lotería Son Seguras?</h3><p>No. Las predicciones de lotería no garantizan números ganadores. El historial puede servir para revisar resultados anteriores, pero no permite determinar con certeza lo que ocurrirá en un sorteo futuro.</p></div>
+<div class="faq-item"><h3>¿Por Qué Es Importante Verificar los Números Publicados?</h3><p>La verificación ayuda a evitar errores relacionados con información desactualizada, incompleta o incorrecta. Si necesitas confirmar un resultado para un propósito oficial, consulta al operador correspondiente y sigue sus instrucciones para comprobar los boletos premiados.</p></div>
+</section>
+<section class="conclusion" id="conclusion"><h2>Conclusión</h2><p>Encontrar información sobre los resultados de Anguila debería ser una experiencia sencilla, basada en la claridad, la precisión y la responsabilidad. Comprobar las fechas, comparar los números con fuentes confiables y comprender las limitaciones de los datos históricos permite consultar la información con mayor confianza.</p><p>Tanto si buscas actualizaciones recientes como si deseas revisar sorteos anteriores, recuerda que la información precisa es más importante que las predicciones o las promesas. Utiliza los recursos disponibles con criterio, protege tus datos personales y no asumas que los resultados pasados garantizan el éxito futuro.</p></section>
+</article>
+<aside class="sidebar"><div class="side-card"><h3>En esta guía</h3><ul class="toc">
+<li><a href="#que-son-resultados">¿Qué son los resultados?</a></li><li><a href="#consultar-internet">Consultar por internet</a></li><li><a href="#como-consultar">Cómo consultar resultados</a></li><li><a href="#horarios-sorteos">Horarios de los sorteos</a></li><li><a href="#resultados-precisos">Precisión y verificación</a></li><li><a href="#resultados-anteriores">Resultados anteriores</a></li><li><a href="#predicciones">Predicciones futuras</a></li><li><a href="#pagina-util">Elegir una página útil</a></li><li><a href="#movil">Consulta desde el móvil</a></li><li><a href="#errores-comunes">Errores comunes</a></li><li><a href="#juego-responsable">Juego responsable</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li><li><a href="#conclusion">Conclusión</a></li></ul></div>
+<div class="side-card"><h3>Información importante</h3><p>Comprueba las fechas y los datos publicados. Siempre que sea posible, verifica los resultados mediante fuentes oficiales o confiables.</p><div class="tip"><strong>Juega con responsabilidad</strong><p style="margin-top:7px">Los resultados pasados no garantizan ganancias futuras. No gastes más de lo que puedes permitirte perder.</p></div></div></aside>
+</div></main>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="https://resultadosanguila.com/"><span class="logo" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name">Resultados <span>Anguila</span></span></a><p>Tu guía informativa para comprender los resultados de Anguila, consultar registros anteriores y encontrar información de forma clara y responsable.</p></div>
+<div><h3>Enlaces rápidos</h3><ul class="footer-list"><li><a href="https://resultadosanguila.com/">Inicio</a></li><li><a href="#resultados-anteriores">Resultados anteriores</a></li><li><a href="#horarios-sorteos">Horarios de sorteos</a></li><li><a href="#resultados-precisos">Verificación de resultados</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ul></div>
+<div><h3>Información para lectores</h3><ul class="footer-list"><li><a href="#como-consultar">Cómo consultar resultados</a></li><li><a href="#predicciones">Historial y predicciones</a></li><li><a href="#movil">Acceso desde móviles</a></li><li><a href="#juego-responsable">Juego responsable</a></li><li><a href="#conclusion">Acerca de esta guía</a></li></ul><p>El contenido es informativo y no garantiza resultados ni premios.</p></div></div>
+<div class="container footer-bottom"><p>© 2026 Resultados Anguila. Todos los derechos reservados.</p><div class="legal"><a href="#juego-responsable">Juego responsable</a><a href="#resultados-precisos">Verificación de información</a><a href="https://resultadosanguila.com/">Inicio</a></div></div></footer>
 </div>
+</body>
+</html>
